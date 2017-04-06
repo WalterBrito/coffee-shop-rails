@@ -1,4 +1,16 @@
 class PostsController < ApplicationController
-  def index
+  def coffee
+  end
+
+  def donuts
+  end
+
+  def cake
+  end
+
+  def tea
+  end
+
+  def about
   end
 end
