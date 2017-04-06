@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+<<<<<<< HEAD
   def coffee
   end
 
@@ -12,5 +13,8 @@ class PostsController < ApplicationController
   end
 
   def about
+=======
+  def index
+>>>>>>> 20bbdc99ffebafab3d89865df77a67e28a09fcef
   end
 end
