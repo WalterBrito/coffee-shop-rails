@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
-<<<<<<< HEAD
+
   def coffee
+    @coffee = Coffee.find(params[:id])
   end
 
   def donuts
@@ -13,8 +14,8 @@ class PostsController < ApplicationController
   end
 
   def about
-=======
+  end
+
   def index
->>>>>>> 20bbdc99ffebafab3d89865df77a67e28a09fcef
   end
 end

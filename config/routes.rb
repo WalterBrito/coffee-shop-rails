@@ -1,16 +1,12 @@
 Rails.application.routes.draw do
   root 'posts#index'
   resources :posts
-  resources :coffee
-<<<<<<< HEAD
-  resources :donuts
-  resources :cake
-  resources :tea
-  resources :about
+  get 'posts/coffee', as: 'coffee'
+  get 'posts/donuts'
+  get 'posts/cake'
+  get 'posts/tea'
+  get 'posts/about'
 
-
-=======
->>>>>>> 20bbdc99ffebafab3d89865df77a67e28a09fcef
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

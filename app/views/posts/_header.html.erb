@@ -4,15 +4,11 @@
     <!-- <%= link_to "Coffee Shop", "", class: "name" %> -->
     <h1 class="name"><%= link_to 'Coffee Shop', root_path %></h1>
     <ul class="main-nav">
-      <li><%= link_to 'coffee', root_path %></li>
+      <li><%= link_to 'coffee', coffee_path %></li>
       <li><%= link_to 'donuts', root_path %></li>
       <li><%= link_to 'cake', root_path %></li>
       <li><%= link_to 'tea', root_path %></li>
       <li><%= link_to 'about', root_path %></li>
-      <!-- <li><a href="donuts.html">donuts</a></li>
-      <li><a href="cake.html">cake</a></li>
-      <li><a href="tea.html">tea</a></li>
-      <li><a href="about.html">about</a></li> -->
       <!-- <li><%= link_to "" do %>
         <%= fa_stacked_icon "user", class: "fa-2x", base: "", id: "lightblue" %>
       <% end %></li> -->
@@ -21,7 +17,3 @@
     </ul>
   </div>
 </header>
-
-<br>
-
-<%= render "posts/header" %>
