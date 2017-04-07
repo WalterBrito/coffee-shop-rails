@@ -4,11 +4,12 @@
     <!-- <%= link_to "Coffee Shop", "", class: "name" %> -->
     <h1 class="name"><%= link_to 'Coffee Shop', root_path %></h1>
     <ul class="main-nav">
-      <li><%= link_to 'coffee', coffee_path %></li>
-      <li><%= link_to 'donuts', root_path %></li>
-      <li><%= link_to 'cake', root_path %></li>
-      <li><%= link_to 'tea', root_path %></li>
-      <li><%= link_to 'about', root_path %></li>
+      <li><%= link_to 'coffee', controller: 'posts', action: 'coffee', id: 1 %></li>
+      <li><%= link_to 'donuts', controller: 'posts', action: 'donuts', id: 2 %></li>
+      <li><%= link_to 'cake', controller: 'posts', action: 'cake', id: 3 %></li>
+      <li><%= link_to 'tea', controller: 'posts', action: 'tea', id: 4 %></li>
+      <li><%= link_to 'about', controller: 'posts', action: 'about', id: 5 %></li>
+
       <!-- <li><%= link_to "" do %>
         <%= fa_stacked_icon "user", class: "fa-2x", base: "", id: "lightblue" %>
       <% end %></li> -->
