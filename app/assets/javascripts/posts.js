@@ -5,3 +5,6 @@ $(document).ready(function() {
     $(this).toggleClass('selected');
   });
 });
+
+// img zoom
+$('.zoom_01').elevateZoom();
