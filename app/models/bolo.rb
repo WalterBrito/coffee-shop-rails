@@ -1,0 +1,2 @@
+class Bolo < ApplicationRecord
+end

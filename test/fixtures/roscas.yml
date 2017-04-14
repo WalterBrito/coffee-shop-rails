@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sabor: MyString
+  preco: 9.99
+  available: false
+
+two:
+  sabor: MyString
+  preco: 9.99
+  available: false

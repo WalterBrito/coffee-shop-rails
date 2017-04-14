@@ -1,0 +1,2 @@
+class Rosca < ApplicationRecord
+end

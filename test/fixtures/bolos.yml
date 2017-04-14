@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  flavor: MyString
+  preco: 9.99
+  available: false
+
+two:
+  type: 
+  flavor: MyString
+  preco: 9.99
+  available: false
