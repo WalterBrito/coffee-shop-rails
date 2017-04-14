@@ -1,2 +1,0 @@
-class Bolo < ApplicationRecord
-end

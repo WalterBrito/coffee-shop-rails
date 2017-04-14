@@ -1,7 +1,7 @@
-class CreateBebidas < ActiveRecord::Migration[5.0]
+class CreateDonuts < ActiveRecord::Migration[5.0]
   def change
-    create_table :bebidas do |t|
-      t.string :type
+    create_table :donuts do |t|
+      t.string :flavor
       t.decimal :price, :decimal, :precision => 8, :scale => 2
       t.boolean :available
 

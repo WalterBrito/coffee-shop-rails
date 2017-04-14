@@ -1,2 +1,0 @@
-class Cha < ApplicationRecord
-end

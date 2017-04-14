@@ -10,63 +10,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170414013608) do
+ActiveRecord::Schema.define(version: 20170414154133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "bebidas", force: :cascade do |t|
-    t.string   "type"
-    t.decimal  "price",      precision: 8, scale: 2
-    t.decimal  "decimal",    precision: 8, scale: 2
-    t.boolean  "available"
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
-  end
-
-  create_table "bolos", force: :cascade do |t|
+  create_table "cakes", force: :cascade do |t|
     t.string   "type"
     t.string   "flavor"
-    t.decimal  "preco",      precision: 8, scale: 2
-    t.decimal  "decimal",    precision: 8, scale: 2
+    t.decimal  "price"
     t.boolean  "available"
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "chas", force: :cascade do |t|
+  create_table "caves", force: :cascade do |t|
+    t.string   "type"
+    t.decimal  "price"
+    t.boolean  "available"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "donuts", force: :cascade do |t|
+    t.string   "flavor"
+    t.decimal  "price"
+    t.boolean  "available"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "teas", force: :cascade do |t|
     t.string   "name"
-    t.decimal  "preco",      precision: 8, scale: 2
-    t.decimal  "decimal",    precision: 8, scale: 2
+    t.decimal  "price"
     t.boolean  "available"
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
-  end
-
-  create_table "roscas", force: :cascade do |t|
-    t.string   "sabor"
-    t.decimal  "preco",      precision: 8, scale: 2
-    t.decimal  "decimal",    precision: 8, scale: 2
-    t.boolean  "available"
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.inet     "current_sign_in_ip"
-    t.inet     "last_sign_in_ip"
-    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

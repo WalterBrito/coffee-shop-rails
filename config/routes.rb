@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'posts#index'
   resources :posts
   get 'coffee/:id' => 'posts#coffee'
@@ -8,5 +6,5 @@ Rails.application.routes.draw do
   get 'cake/:id' => 'posts#cake'
   get 'tea/:id' => 'posts#tea'
   get 'about/:id' => 'posts#about'
-    # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
